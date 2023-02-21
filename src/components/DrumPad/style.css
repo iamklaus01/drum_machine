@@ -1,0 +1,15 @@
+.drum-pad{
+    width:5rem;
+    height:4rem;
+    border:none;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:.2rem;
+    cursor:pointer;
+    box-shadow: 6px 8px 20px -4px rgba(0,0,0,0.75);
+    background-color:gray;
+}
+.drum-pad:active{
+    background-color:orange;
+    transform:translateY(2px);
+}

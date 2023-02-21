@@ -1,0 +1,43 @@
+.drum-settings{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#display{
+    width:8rem;
+    min-height:1rem;
+    background-color:gray;
+    border:2px solid black;
+    color: black;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align: center;
+    margin:1.5rem 0;
+    padding: .5rem 0;
+}
+
+#drum-machine{
+    width: 40rem;
+    height: 20rem;
+    border: 4px solid orange;
+    background-color: #EBEBEB;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding: 1rem;
+}
+  
+.drum-pad-container{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 8px 8px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . .";
+}
