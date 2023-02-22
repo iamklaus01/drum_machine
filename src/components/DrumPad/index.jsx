@@ -1,7 +1,6 @@
 import React from "react"
 import './style.css';
-
-const link_root = "/public/assets/audios/";
+const link_root = "https://s3.amazonaws.com/freecodecamp/drums/";
 
 class DrumPad extends React.Component{
   constructor(props){
@@ -19,7 +18,8 @@ class DrumPad extends React.Component{
     
     return(
       <button onClick={this.handleClick} className="drum-pad" data-track={this.props.track} id={"btn-"+this.props.letter}>
-        <audio id={this.props.letter} className="clip" src={link_root+this.props.track}>
+        <audio id={this.props.letter} className="clip" >
+          <source src={link_root+this.props.track} type="audio/mpeg" />
           Audio not supported
         </audio> {this.props.letter}
       </button>
